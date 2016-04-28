@@ -10,7 +10,6 @@
 #include <cstdlib>
 #include <iostream>
 #include <vector>
-#pragma once
 
 using namespace std;
 
@@ -21,8 +20,6 @@ private:
 	void mostrar(vector<T>& vector, int x,int y);
 
 public:
-	//insercion ();
-	//virtual ~insercion();
 	int ordenar(vector<T>& vect, bool muestra);
 };
 
@@ -55,7 +52,6 @@ int insercion<T>::ordenar(vector<T>& vect, bool muestra)
 			cont++;
 		}
 		if (muestra==true){
-			cin.get();
 			mostrar(vectaux, i, j);
 			cout<<endl;
 		}
